@@ -64,6 +64,15 @@ function WorkInfo({
 export default function WorkList() {
   const works = [
     {
+      thumb: "/upwind-thumb.png",
+      logo: "/upwind-dark.png",
+      name: "Upwind Snowkiting in Norway",
+      duration: "July 2025 - Oct 2025",
+      website: "upwindsnowkiting.com",
+      github: "",
+      desc: "A landing page for Upwind Snowkiting in Norway client. It is a simple and elegant website that showcases the beauty of snowkiting in Norway. Built with Next.js, MUI, and TypeScript. It's also support SEO and performance optimization.",
+    },
+    {
       thumb: "",
       logo: "/appscript.png",
       name: "Drive Files Downloader",
@@ -94,16 +103,21 @@ export default function WorkList() {
       ],
     },
     {
-      thumb: "/upwind-thumb.png",
-      logo: "/upwind-dark.png",
-      name: "Upwind Snowkiting in Norway",
-      duration: "July 2025 - Oct 2025",
-      website: "upwindsnowkiting.com",
-      github: "",
-      desc: "A landing page for Upwind Snowkiting in Norway client. It is a simple and elegant website that showcases the beauty of snowkiting in Norway. Built with Next.js, MUI, and TypeScript. It's also support SEO and performance optimization.",
+      thumb: "",
+      logo: "/telegram-bot.png",
+      name: "Finance Management Telegram Bot",
+      duration: "Jul 15 2025",
+      website: "",
+      github: "lenhatquynh/telegrambot_finance_management",
+      desc: "This Telegram Bot helps you manage your personal finances, stores data in Google Sheets, and provides real-time reports.",
+      features: [
+        "Add income/expense transactions",
+        "View weekly or monthly reports",
+        "Delete the most recent transaction or all your data",
+      ],
     },
     {
-      thumb: "/eclinic-thumb.jpg",
+      thumb: "/eclinic-thumb.jpeg",
       logo: "/eclinic.png",
       name: "Eclinic",
       duration: "Apr 2023 - Aug 2023",
@@ -129,13 +143,23 @@ export default function WorkList() {
         return (
           <div key={workIndex} className="mb-[70px] relative">
             <header className="flex items-center gap-4 section pt-[10px]">
-              <Image
-                className="p-1.5 rounded-full border shadow-md"
-                src={work.logo}
-                alt={work.name}
-                width={40}
-                height={40}
-              />
+              <div
+                className="flex items-center justify-center rounded-full"
+                style={{
+                  width: "45px",
+                  height: "45px",
+                  overflow: "hidden",
+                  border: "1px solid #e0e0e0",
+                }}
+              >
+                <Image
+                  src={work.logo}
+                  alt={work.name}
+                  width={30}
+                  height={30}
+                  style={{ objectFit: "contain" }}
+                />
+              </div>
               <div className="space-y-2">
                 <h4 className="flex items-center gap-2">{work.name} </h4>
                 <div className="hidden sm:flex items-center gap-3">
@@ -165,17 +189,18 @@ export default function WorkList() {
             </section>
 
             {work.thumb && (
-              <div className="flex justify-center bg-zinc-100 rounded-xl p-3 mt-4">
+              <div className="flex justify-center bg-zinc-200 rounded-xl p-3 mt-4">
                 <Image
                   src={work.thumb}
                   alt={work.name}
                   width={500}
                   height={500}
                   style={{
-                    maxWidth: "1000px",
+                    maxWidth: "800px",
                     width: "100%",
                     height: "auto",
                     borderRadius: "10px",
+                    border: "1px solid #e0e0e0",
                   }}
                 />
               </div>

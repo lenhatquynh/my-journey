@@ -11,7 +11,7 @@ export default function About() {
         technologies to enhance my expertise. I have a proven ability to
         collaborate effectively within teams and foster positive working
         relationships, consistently contributing to the achievement of project
-        goals
+        goals.
       </p>
     </section>
   );
