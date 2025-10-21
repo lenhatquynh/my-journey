@@ -64,6 +64,15 @@ function WorkInfo({
 export default function WorkList() {
   const works = [
     {
+      thumb: "/my-journey.png",
+      logo: "/avatar.png",
+      name: "My Journey",
+      duration: "Oct 2025",
+      website: "quynhle.id.vn",
+      github: "lenhatquynh/my-journey",
+      desc: "A personal website for me to share my journey and experiences. Built with Next.js, Tailwind CSS, and TypeScript. It's also support SEO and performance optimization.",
+    },
+    {
       thumb: "/upwind-thumb.png",
       logo: "/upwind-dark.png",
       name: "Upwind Snowkiting in Norway",
