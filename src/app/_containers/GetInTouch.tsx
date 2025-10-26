@@ -3,7 +3,7 @@ import RandomTextReveal from "../_components/RandomTextReveal";
 
 export default function GetInTouch() {
   return (
-    <section className="section mt-[100px] pb-[200px]">
+    <section className="section mt-[100px]">
       <button className="btn uppercase text-xs mb-[10px]">My contact</button>
       <h2>
         <RandomTextReveal onHover={true} text="Get in touch" />

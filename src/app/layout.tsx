@@ -1,6 +1,7 @@
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { IBM_Plex_Mono } from "next/font/google";
-import GoogleAnalytics from "./_components/GoogleAnalytic";
 import "./globals.css";
 
 const ibmMono = IBM_Plex_Mono({
@@ -44,9 +45,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={ibmMono.className}>{children}</body>
-      <GoogleAnalytics />
+      <Analytics />
+      <SpeedInsights />
     </html>
   );
 }

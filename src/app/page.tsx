@@ -7,6 +7,7 @@ import WorkExperience from "./_containers/WorkExperience";
 import WorkList from "./_containers/WorkList";
 import Navigation from "./_containers/Navigation";
 import Blurry from "./_components/Blurry";
+import Papers from "./_containers/Papers";
 
 export const revalidate = 7200
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Mywork />
       <WorkList />
       <GetInTouch />
+      <Papers />
       <Navigation />
       <Blurry />
     </main>
