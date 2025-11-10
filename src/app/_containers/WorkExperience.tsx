@@ -6,7 +6,7 @@ export default function WorkExperience() {
     {
       logo: "/ptn-global.png",
       companyName: "PTN Global",
-      position: "Software Developer",
+      position: "Full Stack Software Developer",
       workingTime: "Oct 2023 - Present",
     },
     {
@@ -24,7 +24,7 @@ export default function WorkExperience() {
     {
       logo: "/gotechjsc.png",
       companyName: "Gotech株式会社",
-      position: "Remote Part-time Developer",
+      position: "Remote Freelance Developer",
       workingTime: " July 2022 - Nov 2022",
     },
   ];
