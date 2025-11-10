@@ -2,20 +2,30 @@ import RandomTextReveal from "@/components/RandomTextReveal";
 
 export default function Skills() {
   const skills = [
-    ".Net",
     "C#",
+    "TypeScript",
+    "JavaScript",
+    ".Net",
+    "Web API",
+    "Entity Framework",
+    "Dapper",
     "Next.js",
-    "Reactjs",
+    "React",
     "PostgreSQL",
-    "Typescript",
-    "Javascript",
+    "SQL Server",
+    "Redis",
+    "In-memory cache",
+    "AWS",
     "OOP",
     "SOLID",
+    "Repository Pattern",
+    "EventBus Pattern",
+    "Git",
+    "JWT",
+    "RabbitMQ",
     "Redux",
     "Tanstack Query",
-    "Git",
-    'Scrum',
-    'Kanban'
+    'Agile & Scrum',
   ];
   return (
     <section className="section">
