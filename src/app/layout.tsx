@@ -1,3 +1,4 @@
+import avatar from "@/public/avatar.png";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Metadata } from "next";
@@ -15,10 +16,18 @@ export const metadata: Metadata = {
   description:
     "Innovative and dedicated Software Engineer, with a passion for transforming ideas into impactful digital solutions.",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      {
+        url: "/favicon.ico",
+        type: "image/x-icon",
+      },
+      {
+        url: avatar.src,
+        type: "image/png",
+      },
+    ],
   },
   keywords: [
-    // Name variations
     "Quynh Le",
     "Le Nhat Quynh",
     "Quynh Le Developer",
@@ -33,70 +42,6 @@ export const metadata: Metadata = {
     "Le Nhat Quynh Backend Developer",
     "Quynh Le Web Developer",
     "Le Nhat Quynh Web Developer",
-
-    // Job titles and roles
-    "Software Engineer",
-    "Full Stack Developer",
-    "Fullstack Developer",
-    "Full-Stack Developer",
-    "Frontend Developer",
-    "Backend Developer",
-    "Web Developer",
-    "Software Developer",
-    "Full Stack Software Developer",
-    "Remote Developer",
-    "Freelance Developer",
-    "Vietnam Developer",
-    "Vietnamese Developer",
-
-    // Technologies - Frontend
-    "Next.js Developer",
-    "React Developer",
-    "TypeScript Developer",
-    "JavaScript Developer",
-    "Tailwind CSS",
-    "Framer Motion",
-
-    // Technologies - Backend
-    "C# Developer",
-    ".NET Developer",
-    "ASP.NET Developer",
-    "Web API Developer",
-    "Entity Framework",
-    "Dapper",
-    "PostgreSQL Developer",
-    "SQL Server Developer",
-    "Redis Developer",
-
-    // Cloud & DevOps
-    "AWS Developer",
-    "Cloud Developer",
-
-    // Architecture & Patterns
-    "Repository Pattern",
-    "EventBus Pattern",
-    "SOLID Principles",
-    "OOP Developer",
-    "Clean Architecture",
-
-    // Tools & Services
-    "RabbitMQ",
-    "Redux",
-    "Tanstack Query",
-    "Agile Developer",
-    "Scrum Developer",
-
-    // Portfolio & Services
-    "Portfolio Website",
-    "Developer Portfolio",
-    "Software Engineer Portfolio",
-    "Web Development Services",
-    "Custom Web Development",
-    "Full Stack Development Services",
-
-    // Location-based (if applicable)
-    "Vietnam Software Engineer",
-    "Vietnamese Full Stack Developer",
   ],
   robots: {
     index: true,
@@ -107,7 +52,18 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL("https://quynhle.id.vn"),
   openGraph: {
-    images: ["/avatar.png"],
+    siteName: "Quynh Le Dev",
+    title: "Quynh Le Dev",
+    description:
+      "Innovative and dedicated Software Engineer, with a passion for transforming ideas into impactful digital solutions.",
+    url: "https://quynhle.id.vn",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: avatar.src,
+      },
+    ],
   },
 };
 
