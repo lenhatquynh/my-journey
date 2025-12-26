@@ -1,4 +1,3 @@
-import avatar from "@/public/avatar.png";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Metadata } from "next";
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
         type: "image/x-icon",
       },
       {
-        url: avatar.src,
+        url: "/avatar.png",
         type: "image/png",
       },
     ],
@@ -61,7 +60,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: avatar.src,
+        url: "/avatar.png",
       },
     ],
   },
